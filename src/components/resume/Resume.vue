@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- banner -->
     <div class="banner" id="home">
       <div class="container">
         <!-- header -->
@@ -99,8 +100,7 @@
           </div>
           <div class="person-info-agileits-w3layouts">
             <p class="para-agileits-w3layouts"><span>Hi!, Iam Steve Martin </span>Nam arcu mauris, tincidunt sed
-              convallis
-              non, egestas ut lacus. Cras sapien urna,
+              convallis non, egestas ut lacus. Cras sapien urna,
               malesuada ut varius consequat, hendrerit nisl. Aliquam vestibulum, odio non ullamcorper malesuada.Nam arcu
               mauris,
               tincidunt sed convallis non, egestas ut lacus.</p>
@@ -367,21 +367,21 @@
         <div class="w3ls_gallery_grids">
           <div class="col-md-4 w3_agile_gallery_grid">
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/1.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/1.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/1.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/2.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/2.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/2.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/3.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/3.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/3.jpg" alt=" " class="img-responsive"/>
                 </div>
@@ -390,21 +390,21 @@
           </div>
           <div class="col-md-4 w3_agile_gallery_grid">
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/4.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/4.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/4.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/5.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/5.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/5.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/6.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/6.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/6.jpg" alt=" " class="img-responsive"/>
                 </div>
@@ -413,21 +413,21 @@
           </div>
           <div class="col-md-4 w3_agile_gallery_grid">
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/7.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/7.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/7.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/8.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/8.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/8.jpg" alt=" " class="img-responsive"/>
                 </div>
               </a>
             </div>
             <div class="agile_gallery_grid">
-              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/9.jpg">
+              <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="../../assets/images/9.jpg">
                 <div class="agile_gallery_grid1">
                   <img src="images/9.jpg" alt=" " class="img-responsive"/>
                 </div>
@@ -496,11 +496,42 @@
         </div>
       </div>
     </div>
+    <!-- //contact -->
+    <!-- Footer -->
+    <div class="copyright-wthree">
+      <div class="container">
+        <p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/"
+                                                                                    target="_blank"
+                                                                                    title="模板之家">模板之家</a> - Collect from
+          <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+      </div>
+    </div>
+    <!-- //Footer -->
+
+    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover"
+                                                                             style="opacity: 1;"> </span></a>
   </div>
 </template>
 <script>
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import solid from '@fortawesome/fontawesome-free-solid'
+import regular from '@fortawesome/fontawesome-free-regular'
+import brands from '@fortawesome/fontawesome-free-brands'
+import vueToTop from 'vue-totop'
+fontawesome.library.add(solid)
+fontawesome.library.add(regular)
+fontawesome.library.add(brands)
 export default {
-  name: 'Resume'
+  name: 'Resume',
+  components: {
+    vueToTop,
+    BootstrapVue,
+    FontAwesomeIcon
+  }
 }
 </script>
 <style scoped>

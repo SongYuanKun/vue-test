@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+   <resume></resume>
   </div>
 </template>
 
 <script>
+import Resume from './components/resume/Resume'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Resume}
 }
 </script>
 
