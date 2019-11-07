@@ -1,8 +1,8 @@
 <template>
     <div style="border: 1px solid black">
         <h4>{{title}}</h4>
-        <div>这个是父组件传进来的值（用props）：{{titleP}}</div>
-        <button @click="changeParentColor()">点击按钮改变父组件的颜色</button>
+        <div>这个是App组件传进来的值（用props）：{{titleP}}</div>
+        <button @click="changeParentColor()">点击按钮改变App组件的颜色</button>
     </div>
 </template>
 
