@@ -1,9 +1,11 @@
 <template>
-    <div id="app">
+    <div :style="{'background-color':backgroundColor}" id="app">
         {{ message }}
         <div>
             我准备在这放个父组件
-            <ParentComponentA :titleP="titleA"></ParentComponentA>
+            <ParentComponentA :titleP="titleA" @fun="changeBackgroundColor"></ParentComponentA>
+            <ParentComponentA :titleP="titleB"></ParentComponentA>
+
         </div>
     </div>
 
@@ -15,9 +17,20 @@ import ParentComponentA from './components/ParentComponentA'
 export default {
   name: 'App',
   data () {
-    return {message: '嗨！你好', titleA: '我是父组件的titleA'}
+    return {
+      message: '嗨！你好',
+      titleA: '我是父组件的titleA',
+      titleB: '我是父组件的titleB',
+      backgroundColor: 'white'
+
+    }
   },
-  components: {ParentComponentA}
+  components: {ParentComponentA},
+  methods: {
+    changeBackgroundColor (bc) {
+      this.backgroundColor = bc
+    }
+  }
 }
 </script>
 
