@@ -3,6 +3,7 @@
         {{ message }}
         <div>
             我准备在这放个父组件
+            <!--fun在这绑定到组件上，当fun被触发的时候会调用changeBackgroundColor方法，子组件里的red作为实参传递到changeBackgroundColor方法的形参上-->
             <ParentComponentA :titleP="titleA" @fun="changeBackgroundColor"></ParentComponentA>
             <ParentComponentA :titleP="titleB"></ParentComponentA>
 
@@ -27,6 +28,7 @@ export default {
   },
   components: {ParentComponentA},
   methods: {
+    // 这里的bc其实是子组件传过来的 red
     changeBackgroundColor (bc) {
       this.backgroundColor = bc
     }

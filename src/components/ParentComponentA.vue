@@ -21,7 +21,9 @@ export default {
     }
   },
   methods: {
+    // 当我点击按钮后进入的是组件内的方法
     changeParentColor () {
+      // emit代表着向外部传参，在外部声明了一个事件叫fun，red是个实数
       this.$emit('fun', 'red')
     }
   }
