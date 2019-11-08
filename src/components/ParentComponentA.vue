@@ -4,7 +4,7 @@
         <div>这个是App组件传进来的值（用props）：{{titleP}}</div>
         <button @click="changeParentColor()">点击按钮改变App组件的颜色</button>
         <div>在这放个ChildrenComponentA
-            <ChildrenComponentA @fun="changeBackgroundColor"></ChildrenComponentA>
+            <ChildrenComponentA :myParent="name" @fun="changeBackgroundColor"></ChildrenComponentA>
         </div>
     </div>
 </template>
@@ -23,6 +23,7 @@ export default {
   },
   data () {
     return {
+      name: 'ParentComponentA',
       title: '这是父组件A',
       backgroundColor: 'yellow'
     }
